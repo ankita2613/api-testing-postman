@@ -14,3 +14,5 @@ Tests a public practice API, https://jsonplaceholder.typicode.com, which is used
 | GET /users/9999 | Status is 404 for a user that does not exist |
 | POST /posts | Status is 201, the title is echoed back, a numeric `id` is created |
 
+##Findings
+- A POST to /posts with no `title` returned `201`, not `400` (confirmed in my Rest Assured test)
